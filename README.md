@@ -1,38 +1,27 @@
-# Описание репозитория
+This repository contains scripts for installing, updating and uninstalling Akvila.Backend. The scripts simplify the process of managing the server side of AkvilaLauncher, making it easy and convenient to perform the necessary operations. 
 
-Этот репозиторий содержит скрипты для установки, обновления и удаления Gml.Backend. Скрипты упрощают процесс управления серверной частью Gml, обеспечивая легкость и удобство выполнения необходимых операций. 
+## Installation
 
-## Установка на русском
-
-Для установки Gml.Backend выполните следующие команды в удобной для вас директории (для работы скрипта необходим `curl`, [инструкция по установке curl](https://losst.pro/ustanovka-curl-v-ubuntu)):
+To install Akvila.Backend, run the following commands in a convenient directory:
 
 ```sh
-curl -O https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend.Installer/master/gml-installer-rus.sh
-chmod +x ./gml-installer-rus.sh
-./gml-installer-rus.sh
+curl -O https://raw.githubusercontent.com/AkvilaLauncher/Akvila.Backend.Installer/master/akvila-installer.sh
+chmod +x ./akvila-installer.sh
+./akvila-installer.sh
 ```
 
-## Обновление
+## Update
 
-Для обновления Gml.Backend выполните следующую команду в директории, где находятся файлы `docker-compose.yml` и `.env`:
+To update the Akvila.Backend, run the following command in the directory where the `docker-compose.yml` and `.env` files are located:
 
 ```sh
-curl -s https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend.Installer/master/gml-updater-rus.sh | sh
+curl -s https://raw.githubusercontent.com/AkvilaLauncher/Akvila.Backend.Installer/master/akvila-updater.sh | sh
 ```
 
-## Удаление
+## Delete
 
-Для удаления Gml.Backend выполните следующую команду в директории, где находятся файлы `docker-compose.yml` и `.env`:
+To remove Akvila.Backend, run the following command in the directory where the `docker-compose.yml` and `.env` files are located:
 
 ```sh
-curl -s https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend.Installer/master/gml-deleter-rus.sh | sh
+curl -s https://raw.githubusercontent.com/AkvilaLauncher/Akvila.Backend.Installer/master/akvila-deleter.sh | sh
 ```
-
-## Преимущества
-
-- **Простота установки**: Установка Gml.Backend осуществляется в несколько команд.
-- **Удобное обновление**: Легкое обновление сервера с помощью одной команды.
-- **Быстрое удаление**: Возможность удаления всей серверной части также в одну команду.
-- **Автоматизация**: Скрипты обеспечивают автоматизацию рутинных задач по управлению серверной частью.
-
-Этот репозиторий предназначен для тех, кто хочет упростить управление своим сервером Gml.Backend, минимизируя ручные операции и возможные ошибки.
